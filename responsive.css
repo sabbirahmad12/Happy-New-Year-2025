@@ -1,0 +1,79 @@
+@media only screen and (min-width:200px) and (max-width:575px){
+
+.msg {
+  font-size: 70px;
+  color: rgb(255, 215, 0);
+}
+.year{
+  left: 25px;
+}
+.year > span {
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+@keyframes old_animation {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: -750%;
+  }
+}
+
+@keyframes new_animation {
+  0% {
+    right: -25px;
+  }
+  40% {
+    right: 50px;
+  }
+  90% {
+    right: 50px;
+  }
+  100% {
+    right: 105px;
+    color: yellow;
+  }
+}
+.balloon {
+    width: 60px;
+    height: 70px;
+    margin-top: -170px;
+
+}
+
+.balloon::after{
+    width: 4px;
+    height: 70px;
+    left: 50%;
+    margin-left: -5px;
+    bottom: -80px;
+}
+.balloon::before{
+    border-width: 0 5px 10px 5px;
+    left: 50%;
+    bottom: -10px;
+    margin-left: -7px;
+}
+
+@keyframes balloon_animation {
+  0% {
+    right: -35px;
+  }
+  40% {
+    right: 40px;
+  }
+  50% {
+    right: 100px;
+    top: 50%;
+  }
+  100% {
+    right: 100px;
+    top: -700%;
+  }
+}
+canvas{
+  width: 50%;
+  height: 50%;
+}
+}
